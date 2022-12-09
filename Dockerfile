@@ -12,7 +12,7 @@ RUN mvn clean package spring-boot:repackage
 RUN mkdir /app
 
 #cpoies .jar to app dir
-RUN cp /build/target/assignment-app.jar /app/
+RUN cp /build/target/demo-app.jar /app/
 
 EXPOSE 8081
 # runs the app
