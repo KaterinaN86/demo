@@ -1,2 +1,2 @@
 # Demo spring boot application, gitHub repo has webhooks
-simple sipring boot demo
+simple spring boot demo
