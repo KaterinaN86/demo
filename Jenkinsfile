@@ -3,7 +3,6 @@ node {
     def dockerImageTag = "demo-deploy:latest"
 
 try{
-     notifyBuild('STARTED')
      stage('Clone Repo') {
         // for display purposes
         // Get some code from a GitHub repository
