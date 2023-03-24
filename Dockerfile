@@ -14,6 +14,6 @@ RUN mkdir /app
 #cpoies .jar to app dir
 RUN cp /build/target/demo-app.jar /app/
 
-EXPOSE 8081
+EXPOSE 8082
 # runs the app
 ENTRYPOINT ["java", "-jar", "/app/demo-app.jar"]
