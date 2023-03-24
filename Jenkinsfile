@@ -17,7 +17,7 @@ try{
       stage('Deploy docker'){
               echo "Docker Image Tag Name: ${dockerImageTag}"
               sh "docker stop demo-deploy || true && docker rm demo-deploy || true"
-              sh "docker run --name demo-deploy -d -p 8082:8080 demo-deploy:latest"
+              sh "docker run --name demo-deploy -d -p 8082:8082 demo-deploy:latest"
       }
 }catch(e){
     currentBuild.result = "FAILED"
